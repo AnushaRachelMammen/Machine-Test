@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><form method="post" action="{% url 'savedata' %}">
+    {% csrf_token %}
+    <h1>Add Product details</h1>
+    <input type="text" placeholder="Product_Name" name="pname"><br><br>
+    <input type="text" placeholder="Description" name="dname"><br><br>
+    <input type="text" placeholder="Size" name="size"><br><br>
+    <input type="text" placeholder="Colour" name="colour"><br><br>
+    <input type="text" placeholder="status" name="status"><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

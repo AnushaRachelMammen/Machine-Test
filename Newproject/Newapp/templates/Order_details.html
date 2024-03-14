@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>ORDER DETAILS</h1>
+<form method="post" action="{% url 'saveorderdata' %}">
+    {% csrf_token %}
+    <input type="text" placeholder="Customer Name" name="customer"><br>
+    <input type="text" placeholder="Product name" name="proname"><br>
+    <input type="text" placeholder="Purchase_no" name="pnumber"><br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
